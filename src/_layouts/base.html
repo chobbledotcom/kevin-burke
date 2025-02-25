@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Eleventy" />
+    <title>{{ title }}</title>
+    {% if description -%}
+    <meta name="description" content="{{ description | escape }}" />
+    {% endif -%}
+    <link rel="stylesheet" href="/css/mvp.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    {% if contact -%}
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
+    {% endif -%}
+  </head>
+  <body class="{{ css }}">
+    <header>{% include "navbar.html" %}</header>
+    <main>{{content }}</main>
+    <footer>{% include "footer.html" %}</footer>
+  </body>
+</html>
