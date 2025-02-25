@@ -412,6 +412,7 @@ input[type="submit"][disabled]:hover {
 }
 
 form {
+  background: var(--color-bg-secondary);
   border: 1px solid var(--color-bg-secondary);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow) var(--color-shadow);

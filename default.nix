@@ -10,7 +10,7 @@ let
 
 in
 pkgs.stdenv.mkDerivation {
-  name = "chobble-com";
+  name = "kevinburkeservices-com";
 
   src = builtins.filterSource (
     path: type:
