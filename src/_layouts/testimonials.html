@@ -6,7 +6,7 @@ layout: base.html
 
 {% for testimonial in testimonials %}
 <blockquote>
-  {{ testimonial.text }}
+  <span>{{ testimonial.text }}</span>
   <footer>
     <a rel="nofollow" href="{{ testimonial.url }}"> {{ testimonial.name }} </a>
   </footer>
