@@ -86,6 +86,10 @@ body > header {
 body > footer {
   margin-bottom: 2rem;
   border-radius: 0 0 1rem 1rem;
+
+  section {
+    gap: 1rem;
+  }
 }
 
 hr {
