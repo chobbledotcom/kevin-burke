@@ -617,15 +617,6 @@ blockquote {
   max-width: var(--width-card-medium);
   padding: 1.5rem 1rem;
   text-align: var(--justify-important);
-  span {
-    quotes: "“" "”" "‘" "’";
-    &::before {
-      content: open-quote;
-    }
-    &::after {
-      content: close-quote;
-    }
-  }
 }
 
 blockquote footer {
