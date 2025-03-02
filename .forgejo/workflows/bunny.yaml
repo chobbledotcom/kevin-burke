@@ -11,12 +11,12 @@ jobs:
       - name: Build
         run: nix-build
       - name: Deploy
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        uses: github:wlixcc/SFTP-Deploy-Action@v1.2.5
         with:
           username: ${{ secrets.FTP_USERNAME }}
           server: ${{ secrets.FTP_SERVER }}
-          port: ${{ secrets.FTP_PORT }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          sftp_only: true
+          port: 22
           local_path: './result/*'
           remote_path: '/'
-          sftp_only: true
-          password: ${{ secrets.FTP_PASSWORD }}
