@@ -11,7 +11,7 @@ jobs:
       - name: Build
         run: nix-build
       - name: Deploy
-        uses: github:wlixcc/SFTP-Deploy-Action@v1.2.5
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
         with:
           username: ${{ secrets.FTP_USERNAME }}
           server: ${{ secrets.FTP_SERVER }}
