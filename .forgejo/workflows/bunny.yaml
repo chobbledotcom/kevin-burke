@@ -10,13 +10,13 @@ jobs:
         uses: actions/checkout@v4
       - name: Build
         run: nix-build
-      - name: Deploy
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+      - name: Deploy to Edge Storage
+        uses: own3d/bunny-action@main
+        env:
+          BUNNY_API_ACCESS_KEY: ${{ secrets.FTP_PASSWORD }}
+          BUNNY_STORAGE_HOSTNAME: uk.storage.bunnycdn.com
+          BUNNY_STORAGE_USERNAME: ${{ secrets.FTP_USERNAME }}
+          BUNNY_STORAGE_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          BUNNY_PULL_ZONE_ID: 3403550
         with:
-          username: ${{ secrets.FTP_USERNAME }}
-          server: ${{ secrets.FTP_SERVER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          sftp_only: true
-          port: 22
-          local_path: './result/*'
-          remote_path: '/'
+          args: deploy --dir=result
