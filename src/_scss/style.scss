@@ -26,7 +26,7 @@
   --width-card-medium: 460px;
   --width-card-wide: 800px;
   --width-content: 1080px;
-  
+
   /* New animation variables */
   --transition-fast: 0.2s ease;
   --transition-medium: 0.3s ease;
@@ -69,7 +69,6 @@ main {
   box-sizing: border-box;
   padding: 3rem 1.5rem;
   max-width: var(--width-content);
-  transition: transform var(--transition-medium), opacity var(--transition-medium);
 }
 
 body > footer,
@@ -78,6 +77,12 @@ body > main {
   width: var(--width-content);
   max-width: calc(100vw - 4rem);
   box-shadow: var(--box-shadow);
+}
+
+body > main {
+  transition:
+    transform var(--transition-medium),
+    opacity var(--transition-medium);
   opacity: 0;
   animation: fadeInUp 0.7s ease forwards;
 }
@@ -146,7 +151,9 @@ section img,
 article img {
   max-width: 100%;
   border-radius: var(--border-radius);
-  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+  transition:
+    transform var(--transition-medium),
+    box-shadow var(--transition-medium);
 }
 
 section img:hover,
@@ -189,12 +196,24 @@ section > * {
   opacity: 0;
 }
 
-section > *:nth-child(1) { animation-delay: 0.1s; }
-section > *:nth-child(2) { animation-delay: 0.2s; }
-section > *:nth-child(3) { animation-delay: 0.3s; }
-section > *:nth-child(4) { animation-delay: 0.4s; }
-section > *:nth-child(5) { animation-delay: 0.5s; }
-section > *:nth-child(6) { animation-delay: 0.6s; }
+section > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+section > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+section > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+section > *:nth-child(4) {
+  animation-delay: 0.4s;
+}
+section > *:nth-child(5) {
+  animation-delay: 0.5s;
+}
+section > *:nth-child(6) {
+  animation-delay: 0.6s;
+}
 
 [hidden] {
   display: none;
@@ -272,7 +291,7 @@ nav ul li a {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -310,7 +329,9 @@ nav ul li ul {
   z-index: 10;
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity var(--transition-fast), transform var(--transition-fast);
+  transition:
+    opacity var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 nav ul li ul::before {
@@ -439,22 +460,29 @@ main {
   h6 {
     color: #c33149;
   }
-  
+
   h1,
   h2 {
     display: inline-block;
     position: relative;
   }
-  
+
   h1::after,
   h2::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -0.5rem;
     height: 3px;
     width: 100%;
-    background: linear-gradient(to right, var(--color-link), var(--color-link), rgba(162, 37, 34, 0.7), rgba(162, 37, 34, 0.4), rgba(162, 37, 34, 0.1));
+    background: linear-gradient(
+      to right,
+      var(--color-link),
+      var(--color-link),
+      rgba(162, 37, 34, 0.7),
+      rgba(162, 37, 34, 0.4),
+      rgba(162, 37, 34, 0.1)
+    );
     border-radius: 3px;
   }
 }
@@ -589,7 +617,7 @@ a b::before,
 a strong::before,
 button::before,
 input[type="submit"]::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -670,7 +698,9 @@ form {
   min-width: var(--width-card);
   padding: 2rem;
   text-align: var(--justify-normal);
-  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+  transition:
+    transform var(--transition-medium),
+    box-shadow var(--transition-medium);
 }
 
 form:hover {
@@ -846,7 +876,12 @@ dialog hr {
   margin-block: 1.2rem;
   border: none;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(194, 153, 121, 0.5), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(194, 153, 121, 0.5),
+    transparent
+  );
 }
 
 /* Tables */
