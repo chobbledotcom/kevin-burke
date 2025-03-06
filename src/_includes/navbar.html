@@ -3,8 +3,9 @@
     <img src="/assets/kevin-burke-logo.png" alt="KB Web Marketing">
   </a>
   <ul>
-    {%- assign sorted_pages = collections.page | sort: 'data.link_order' -%}
-    {%- for p in sorted_pages -%}
+    {%- assign pages = collections.page | where: 'data.link_order' -%}
+    {%- assign pages = pages | sort: 'data.link_order' -%}
+    {%- for p in pages -%}
       {% if p.data.link_title %}
         <li>
           <a href="{{ p.url }}"
