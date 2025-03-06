@@ -6,15 +6,13 @@
     {%- assign pages = collections.page | where: 'data.link_order' -%}
     {%- assign pages = pages | sort: 'data.link_order' -%}
     {%- for p in pages -%}
-      {% if p.data.link_title %}
-        <li>
-          <a href="{{ p.url }}"
-            {% if page.url == p.url %}
-              class="active"
-            {% endif %}
-          >{{ p.data.link_title }}</a>
-        </li>
-      {% endif %}
+      <li>
+        <a href="{{ p.url }}"
+          {% if page.url == p.url %}
+            class="active"
+          {% endif %}
+        >{{ p.data.link_title }}</a>
+      </li>
     {% endfor %}
   </ul>
 </nav>
