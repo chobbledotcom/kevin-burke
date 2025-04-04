@@ -12,10 +12,4 @@ I offer a full SEO and marketing service to companies in all industries, providi
 
 ## Typical prices
 
-Prices are based at £33.33 for each ‘block’ of work on your website. Although it is impossible to guarantee a certain amount of work completed within one block, it is based on the following:
-
-- 500 words of non-technical content, such as product descriptions or advertising pages
-- Between three and five backlinks
-- A 250-word press release - publishing this press release will likely take another half a block
-
-Technical content, PPC and other services can be bundled into your agreed payments and will be charged at the same rate.
+The least I charge is £100! This can be one-off or ongoing. 
