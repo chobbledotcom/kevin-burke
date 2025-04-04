@@ -18,7 +18,7 @@ My lowest price is just £100, which can be one off or repeated on a monthly bas
 
 Skills include:
 
-- [SEO](/seo-search-engine-optimisation/)
+- SEO
 - Content writing
 - Press Releases
 - Online Reputation Management
