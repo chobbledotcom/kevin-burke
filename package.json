@@ -1,0 +1,15 @@
+{
+  "name": "kevinburkeservices-com",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "tidy": "tidy -config tidy.cfg -q -m _site/**/*.html || true"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "fast-glob": "^3.3.2",
+    "sass": "^1.86.3"
+  }
+}
