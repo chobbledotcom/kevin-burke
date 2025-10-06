@@ -1,5 +1,6 @@
 const path = require("path");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { configureScss } = require("./_lib/scss");
 
 module.exports = function (eleventyConfig) {
   // Add RSS plugin
@@ -14,6 +15,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addWatchTarget("./src/**/*");
+
+  // Configure SCSS compilation
+  configureScss(eleventyConfig);
 
   // Copy static assets
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -45,7 +49,7 @@ module.exports = function (eleventyConfig) {
       layouts: "_layouts",
       data: "_data",
     },
-    templateFormats: ["liquid", "njk", "md", "html"],
+    templateFormats: ["liquid", "njk", "md", "html", "scss"],
     htmlTemplateEngine: "liquid",
     markdownTemplateEngine: "liquid",
   };
