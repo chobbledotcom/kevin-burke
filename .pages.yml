@@ -1,0 +1,58 @@
+media:
+  input: src/assets
+  output: /assets
+  path: assets
+  categories: [image, file]
+
+content:
+  - name: pages
+    label: Pages
+    path: src/pages
+    type: collection
+    subfolders: false
+    view:
+      fields: [permalink, title, heading]
+      primary: heading
+      sort: [link_order, heading]
+    fields:
+      - { name: title, type: string, label: Page Title }
+      - { name: heading, type: string, label: Page Heading }
+      - { name: link_title, type: string, label: Navigation Title }
+      - { name: link_order, type: number, label: Navigation Order }
+      - { name: description, type: string, label: Meta Description }
+      - { name: permalink, type: string, label: Permalink }
+      - { name: layout, type: string, label: Layout, default: "page.html" }
+      - { name: body, label: Body Content, type: code, options: { language: markdown } }
+
+  - name: testimonials_data
+    label: Testimonials
+    type: file
+    path: src/_data/testimonials.json
+    format: json
+    fields:
+      - name: testimonials
+        label: Testimonials
+        type: object
+        list: true
+        fields:
+          - { name: text, type: text, label: Testimonial Text, required: true }
+          - { name: author, type: string, label: Author Name, required: true }
+          - { name: company, type: string, label: Company/Role }
+          - { name: date, type: string, label: Date }
+
+  - name: site_config
+    label: Site Configuration
+    type: file
+    path: src/_data/site.json
+    fields:
+      - { name: name, type: string, label: Site Name }
+      - { name: url, type: string, label: Site URL }
+      - { name: formspark_id, type: string, label: Formspark Form ID }
+
+  - name: build_config
+    label: Build Configuration
+    type: file
+    path: src/_data/build
+    fields:
+      - { name: environment, type: string, label: Environment }
+      - { name: timestamp, type: string, label: Build Timestamp }
