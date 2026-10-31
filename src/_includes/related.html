@@ -1,0 +1,17 @@
+{%- assign services = collections.page | where: 'data.nav_group', 'services' | sort: 'data.link_order' -%}
+<div class="service-grid-wrap" id="services">
+  <h2>{% if nav_group == "services" %}More SEO services for hire businesses{% else %}SEO services for hire businesses{% endif %}</h2>
+  <div class="service-grid">
+    {%- for s in services -%}
+      {%- if s.url != page.url -%}
+      <a class="service-card" href="{{ s.url }}">
+        {%- if s.data.image -%}<img src="{{ s.data.image }}" alt="" loading="lazy" width="320" height="200">{%- endif -%}
+        <span class="service-card-body">
+          <span class="service-card-title">{{ s.data.link_title }}</span>
+          <span class="service-card-text">{{ s.data.summary }}</span>
+        </span>
+      </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>

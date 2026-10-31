@@ -1,4 +1,32 @@
-<section>
-  <span>&copy; Kevin Burke 2025</span>
-  <a href="/other-businesses">Other Businesses</a>
-</section>
+{%- assign services = collections.page | where: 'data.nav_group', 'services' | sort: 'data.link_order' -%}
+<div class="footer-grid">
+  <div class="footer-about">
+    <img src="/assets/kevin-burke-logo.png" alt="Kevin Burke Web Marketing" width="90" height="90">
+    <p>SEO, content writing and directory listings for bouncy castle, party and event hire businesses across the UK, Ireland and the USA.</p>
+  </div>
+  <div>
+    <h3>SEO services</h3>
+    <ul>
+      {%- for s in services -%}<li><a href="{{ s.url }}">{{ s.data.link_title }}</a></li>{%- endfor -%}
+    </ul>
+  </div>
+  <div>
+    <h3>About</h3>
+    <ul>
+      <li><a href="/how-i-work/">How I work</a></li>
+      <li><a href="/directory-network/">My directory network</a></li>
+      <li><a href="/about/">About Kevin</a></li>
+      <li><a href="/testimonials/">Reviews and testimonials</a></li>
+      <li><a href="/other-businesses/">Other businesses</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Get in touch</h3>
+    <ul>
+      <li><a href="mailto:info@kevinburkeservices.com">info@kevinburkeservices.com</a></li>
+      <li><a href="/contact/">Contact form</a></li>
+      <li><a href="https://www.facebook.com/kevinburkeseo" rel="noopener" target="_blank">Facebook: Kevin Burke SEO</a></li>
+    </ul>
+  </div>
+</div>
+<p class="footer-legal">&copy; Kevin Burke Services. Based in Manchester, working with hire businesses everywhere.</p>

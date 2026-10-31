@@ -1,19 +1,36 @@
-<nav>
-  <a href="/">
-    <img src="/assets/kevin-burke-logo.png" alt="KB Web Marketing">
+{%- assign navpages = collections.page | where: 'data.link_order' | sort: 'data.link_order' -%}
+{%- assign services = collections.page | where: 'data.nav_group', 'services' | sort: 'data.link_order' -%}
+{%- assign in_services = false -%}
+{%- for s in services -%}{%- if s.url == page.url -%}{%- assign in_services = true -%}{%- endif -%}{%- endfor -%}
+<nav class="site-nav" aria-label="Main">
+  <a class="site-logo" href="/">
+    <img src="/assets/kevin-burke-logo.png" alt="Kevin Burke Web Marketing" width="150" height="150">
   </a>
-  <ul>
-    {%- assign pages = collections.page | where: 'data.link_order' -%}
-    {%- assign pages = pages | sort: 'data.link_order' -%}
-    {%- for p in pages -%}
-      <li>
-        <a href="{{ p.url }}"
-          {% if page.url == p.url %}
-            class="active"
-          {% endif %}
-        >{{ p.data.link_title }}</a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+  <ul class="nav-links">
+    {%- for p in navpages -%}
+      {%- if p.data.nav_group == "services" -%}{%- continue -%}{%- endif -%}
+      <li{% if p.data.link_title == "Contact" %} class="nav-cta"{% endif %}>
+        <a href="{{ p.url }}"{% if page.url == p.url %} class="active" aria-current="page"{% endif %}>{{ p.data.link_title }}</a>
       </li>
-    {% endfor %}
+      {%- if p.data.link_order == 0 and services.size > 0 -%}
+      <li class="nav-dropdown">
+        <a href="/#services"{% if in_services %} class="active"{% endif %}>SEO Services <span class="caret" aria-hidden="true">&#9662;</span></a>
+        <ul>
+          {%- for s in services -%}
+          <li><a href="{{ s.url }}"{% if page.url == s.url %} class="active" aria-current="page"{% endif %}>{{ s.data.link_title }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </li>
+      {%- endif -%}
+    {%- endfor -%}
+    <li class="nav-fb">
+      <a href="https://www.facebook.com/kevinburkeseo" rel="noopener" target="_blank" aria-label="Kevin Burke SEO on Facebook">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V22h3.4z"/></svg>
+        <span>Facebook</span>
+      </a>
+    </li>
   </ul>
 </nav>
 
