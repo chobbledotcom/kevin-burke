@@ -4,6 +4,13 @@ contact: true
 css: contact
 ---
 
-<article>{{ content }}</article>
+<article>
+  {% if image %}
+  <figure class="page-hero">
+    <img src="{{ image }}" alt="{{ image_alt }}" width="420" height="380">
+  </figure>
+  {% endif %}
+  {{ content }}
+</article>
 
 <section>{% include "contact-form.html" %}</section>

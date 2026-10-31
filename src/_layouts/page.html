@@ -3,4 +3,13 @@ layout: base.html
 css: page
 ---
 
-<article>{{ content }}</article>
+<article>
+  {% if image %}
+  <figure class="page-hero">
+    <img src="{{ image }}" alt="{{ image_alt }}" width="420" height="420">
+  </figure>
+  {% endif %}
+  {{ content }}
+  {% unless hide_related %}{% include "related.html" %}{% endunless %}
+  {% include "cta.html" %}
+</article>

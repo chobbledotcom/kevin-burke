@@ -1,8 +1,16 @@
 ---
 layout: base.html
+css: page
 ---
 
-<article>{{ content }}</article>
+<article>
+  {% if image %}
+  <figure class="page-hero">
+    <img src="{{ image }}" alt="{{ image_alt }}" width="420" height="420">
+  </figure>
+  {% endif %}
+  {{ content }}
+</article>
 
 {% for testimonial in testimonials %}
 <blockquote>
@@ -12,3 +20,5 @@ layout: base.html
   </footer>
 </blockquote>
 {% endfor %}
+
+<article>{% include "cta.html" %}</article>
