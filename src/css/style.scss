@@ -1359,3 +1359,7 @@ article details summary {
     grid-template-columns: 1fr;
   }
 }
+
+nav input.nav-toggle {
+  display: none !important;
+}
