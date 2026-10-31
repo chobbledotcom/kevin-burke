@@ -33,3 +33,7 @@ I work with bouncy castle and soft play firms across the UK and Ireland, and I b
 ## Get started
 
 Email **[info@kevinburkeservices.com](mailto:info@kevinburkeservices.com)** with your website and the towns you cover, and I'll send you some ideas.
+
+### Other hire businesses I help
+
+[Bouncy castle SEO](/bouncy-castle-seo/) · [Inflatable hire SEO](/inflatable-hire-seo/) · [Soft play hire SEO](/soft-play-hire-seo/) · [Event hire SEO](/event-hire-seo/) · [Party rental SEO](/party-rental-seo/) · [Marquee hire SEO](/marquee-hire-seo/) · [Funfair hire SEO](/funfair-hire-seo/) · [Portable toilet hire SEO](/portable-toilet-hire-seo/) · [Bounce house rental SEO](/bounce-house-rental-seo/)

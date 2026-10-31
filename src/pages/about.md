@@ -1,6 +1,6 @@
 ---
 link_title: About
-link_order: 5
+link_order: 6
 title: "About Kevin Burke | Bouncy Castle & Event Hire SEO"
 heading: "About Kevin Burke"
 description: "Kevin Burke is a Manchester-based SEO and content writer who works with bouncy castle, party and event hire businesses across the UK and Ireland."
@@ -18,7 +18,7 @@ The online marketing industry is full of companies that charge a lot and do very
 
 ### My directory network
 
-I own and run a network of directory websites covering party hire, events and local business services across the UK, Ireland and the USA. My clients can be listed on the sites that suit their area, with their own profile page and a link to their website.
+I own and run [a network of directory websites covering party hire, events and local business services across the UK, Ireland and the USA](/directory-network/). My clients can be listed on the sites that suit their area, with their own profile page and a link to their website.
 
 ### Not in event hire?
 

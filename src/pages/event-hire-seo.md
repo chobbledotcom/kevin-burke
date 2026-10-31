@@ -38,3 +38,7 @@ I work on one-off jobs or as a monthly service. Tell me what you'd like to achie
 ## Let's talk
 
 Email **[info@kevinburkeservices.com](mailto:info@kevinburkeservices.com)** or use [my contact page](/contact/).
+
+### Other hire businesses I help
+
+[Bouncy castle SEO](/bouncy-castle-seo/) · [Inflatable hire SEO](/inflatable-hire-seo/) · [Soft play hire SEO](/soft-play-hire-seo/) · [Event hire SEO](/event-hire-seo/) · [Party rental SEO](/party-rental-seo/) · [Marquee hire SEO](/marquee-hire-seo/) · [Funfair hire SEO](/funfair-hire-seo/) · [Portable toilet hire SEO](/portable-toilet-hire-seo/) · [Bounce house rental SEO](/bounce-house-rental-seo/)

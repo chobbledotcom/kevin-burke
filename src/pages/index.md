@@ -18,12 +18,12 @@ I'm Kevin Burke, a Manchester-based SEO and content writer. Event hire SEO is wh
 
 - **Local SEO** – getting you seen for "bouncy castle hire [your town]" in every town you deliver to, not just the one you're based in.
 - **Content writing** – product pages, town pages, seasonal pages and blog posts written for parents, schools and event organisers, the people who actually book.
-- **Directory listings** – I run a network of 15 directory websites for party hire, events and local businesses across the UK, Ireland and the USA. My clients get a full profile page on the ones that fit their area.
+- **Directory listings** – I run [a network of 15 directory websites](/directory-network/) for party hire, events and local businesses across the UK, Ireland and the USA. My clients get a full profile page on the ones that fit their area.
 - **Link building** – relevant, authoritative links from sites that make sense for an event hire business.
 - **Press releases and reputation** – news coverage for the things you're doing anyway, and help keeping your reviews and online reputation in good shape.
 - **PPC** – Google Ads for busy weekends and peak season, if you want bookings while your organic rankings grow.
 
-More detail: [Bouncy castle SEO](/bouncy-castle-seo/) · [Event hire SEO](/event-hire-seo/) · [Bounce house rental SEO](/bounce-house-rental-seo/) · [Party rental SEO](/party-rental-seo/)
+More detail: [Bouncy castle SEO](/bouncy-castle-seo/) · [Inflatable hire SEO](/inflatable-hire-seo/) · [Soft play hire SEO](/soft-play-hire-seo/) · [Event hire SEO](/event-hire-seo/) · [Party rental SEO](/party-rental-seo/) · [Marquee hire SEO](/marquee-hire-seo/) · [Funfair hire SEO](/funfair-hire-seo/) · [Portable toilet hire SEO](/portable-toilet-hire-seo/) · [Bounce house rental SEO](/bounce-house-rental-seo/)
 
 ### Why event hire businesses use me
 
@@ -46,7 +46,7 @@ More detail: [Bouncy castle SEO](/bouncy-castle-seo/) · [Event hire SEO](/event
 
 1. **Tell me about your business.** Send me your website, the towns you cover and what you hire out.
 2. **I'll suggest a plan** that fits your budget, from a one-off job to an ongoing monthly service.
-3. **I get on with it.** Content, links and listings, with updates as I go.
+3. **I get on with it.** Content, links and listings, with updates as I go. [Read more about how I work](/how-i-work/).
 
 ### Who I work with
 
