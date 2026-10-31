@@ -1,9 +1,11 @@
 ---
 link_title: About
-link_order: 6
+link_order: 11
 title: "About Kevin Burke | Bouncy Castle & Event Hire SEO"
 heading: "About Kevin Burke"
 description: "Kevin Burke is a Manchester-based SEO and content writer who works with bouncy castle, party and event hire businesses across the UK and Ireland."
+image: "/assets/images/kevin-burke-seo-caricature.jpg"
+image_alt: "Caricature of Kevin Burke, Manchester SEO specialist"
 ---
 
 ## Hi, I'm Kevin

@@ -2,6 +2,8 @@
 title: "My Directory Network | Kevin Burke Web Marketing"
 heading: "My Directory Network"
 description: "Kevin Burke runs a network of 15 directory websites for party hire, events and local businesses in the UK, Ireland and the USA. Clients can be listed."
+image: "/assets/images/directory-network.jpg"
+image_alt: "Carousel horses on a traditional fairground ride"
 ---
 
 ## Directories built for hire businesses

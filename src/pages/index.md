@@ -6,6 +6,8 @@ link_title: Home
 link_order: 0
 description: "Kevin Burke provides SEO, content writing and directory listings for bouncy castle, party and event hire businesses across the UK and Ireland."
 permalink: "/"
+image: "/assets/images/kevin-burke-seo-caricature.jpg"
+image_alt: "Caricature of Kevin Burke, Manchester SEO specialist"
 ---
 
 ## Get more bookings from Google
@@ -53,7 +55,3 @@ More detail: [Bouncy castle SEO](/bouncy-castle-seo/) · [Inflatable hire SEO](/
 Bouncy castle and soft play hire · Inflatable and party hire · Marquee and tent hire · Funfair and ride hire · Portable toilet hire · Event fencing and site services · Mobile bars, photo booths and DJs · Skip hire, waste and other local trades
 
 I also take on businesses outside events. If you have a local service business that needs more enquiries, get in touch.
-
-## Ready to get more bookings?
-
-Email **[info@kevinburkeservices.com](mailto:info@kevinburkeservices.com)** or use [my contact page](/contact/). Tell me your website and where you deliver, and I'll come back to you with ideas.

@@ -4,6 +4,10 @@ heading: "SEO for Event Hire Companies"
 link_title: "Event Hire SEO"
 link_order: 2
 description: "SEO and content for marquee, funfair, toilet, fencing, AV and party hire companies. Win more event bookings and enquiries from Google."
+nav_group: services
+image: "/assets/images/event-hire-seo.jpg"
+image_alt: "Outdoor event with a big wheel, stalls and striped marquees"
+summary: "SEO for firms supplying marquees, rides, toilets, fencing, AV and more to events."
 ---
 
 ## More enquiries for your event hire business
@@ -35,10 +39,47 @@ I help event hire companies show up in those searches, and look like the obvious
 
 I work on one-off jobs or as a monthly service. Tell me what you'd like to achieve and your budget, and I'll suggest a plan.
 
+
+### An example site structure
+
+I start every project by planning the site's structure, then build each page around it. Every business is different, but a typical plan looks something like this:
+
+| Section | What goes in it |
+|---|---|
+| Home page | what you supply, who you supply it to and the regions you cover |
+| Service pages | one page per product line, such as marquees, staging, toilets or fencing |
+| Event-type pages | weddings, festivals, corporate days, sports events, community fun days |
+| Area pages | the counties and cities where you take on events |
+| Past events | write-ups of events you have supplied, with photos |
+| Guides | planning checklists, site access, licensing and what to ask a supplier |
+
+Once those foundations are in place, I move on to guides, link building and, where it makes sense, press releases. [Read more about how I work](/how-i-work/).
+
+### Frequently asked questions
+
+<details>
+<summary>My customers are businesses and councils, not just the public. Does SEO still help?</summary>
+
+Yes. Event organisers, venue managers and council officers all search Google for suppliers. The content just needs to answer their questions: capacity, lead times, insurance and paperwork.
+
+</details>
+
+<details>
+<summary>I supply lots of different things. Where do I start?</summary>
+
+We start with the services that earn you the most and the areas you most want work in, then add the rest around them. That way the most valuable pages are built first.
+
+</details>
+
+<details>
+<summary>Can you write up events we have done?</summary>
+
+Yes. Event write-ups are some of the most useful pages you can have, because they show real work in real places. Send me photos and a few notes and I'll turn them into pages.
+
+</details>
+
+For specific types of event hire, see [marquee hire SEO](/marquee-hire-seo/), [funfair hire SEO](/funfair-hire-seo/) and [portable toilet hire SEO](/portable-toilet-hire-seo/).
+
 ## Let's talk
 
 Email **[info@kevinburkeservices.com](mailto:info@kevinburkeservices.com)** or use [my contact page](/contact/).
-
-### Other hire businesses I help
-
-[Bouncy castle SEO](/bouncy-castle-seo/) · [Inflatable hire SEO](/inflatable-hire-seo/) · [Soft play hire SEO](/soft-play-hire-seo/) · [Event hire SEO](/event-hire-seo/) · [Party rental SEO](/party-rental-seo/) · [Marquee hire SEO](/marquee-hire-seo/) · [Funfair hire SEO](/funfair-hire-seo/) · [Portable toilet hire SEO](/portable-toilet-hire-seo/) · [Bounce house rental SEO](/bounce-house-rental-seo/)

@@ -1,6 +1,7 @@
 ---
 title: Thank You!
 heading: Thank You!
+hide_related: true
 ---
 
 # Thank You!

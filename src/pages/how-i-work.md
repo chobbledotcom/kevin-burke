@@ -3,7 +3,9 @@ title: "How I Work | Kevin Burke Web Marketing"
 heading: "How I Work"
 description: "How Kevin Burke runs SEO for hire businesses: site structure, area and service pages, rebuilt content, then guides, link building and press releases."
 link_title: "How I Work"
-link_order: 5
+link_order: 10
+image: "/assets/images/how-i-work.jpg"
+image_alt: "A team discussing a plan around a table"
 ---
 
 ## Foundations first, then growth

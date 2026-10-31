@@ -1,10 +1,12 @@
 ---
 layout: contact.html
 link_title: Contact
-link_order: 8
+link_order: 13
 title: "Contact Kevin Burke | SEO for Hire Businesses"
 heading: "Contact Kevin"
 description: "Get in touch with Kevin Burke about SEO, content writing or directory listings for your bouncy castle or event hire business today."
+image: "/assets/images/contact.jpg"
+image_alt: "Colourful party balloons and streamers"
 ---
 
 ## Let's get you more bookings

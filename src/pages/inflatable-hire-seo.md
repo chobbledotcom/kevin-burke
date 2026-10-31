@@ -2,6 +2,12 @@
 title: "Inflatable Hire SEO | Kevin Burke Web Marketing"
 heading: "Inflatable Hire SEO"
 description: "SEO for UK inflatable hire companies. Site structure, area pages, product content and directory links that help you rank in every town you deliver to."
+link_title: "Inflatable Hire SEO"
+link_order: 5
+nav_group: services
+image: "/assets/images/inflatable-hire-seo.jpg"
+image_alt: "Giant inflatable slide set up in a park"
+summary: "Rank for inflatable hire across every town you deliver to."
 ---
 
 ## Rank for "inflatable hire" in every town you cover
@@ -23,10 +29,47 @@ I work almost entirely with hire businesses, and I run [my own network of direct
 > "Kevin has been a great help for my website and has written brilliant content. He always responds very quickly and you never have to chase him for anything."
 > **Bounce Back Castles**
 
+
+### An example site structure
+
+I start every project by planning the site's structure, then build each page around it. Every business is different, but a typical plan looks something like this:
+
+| Section | What goes in it |
+|---|---|
+| Home page | your inflatable range and coverage area |
+| Category pages | bouncy castles, assault courses, slides, games, adult inflatables |
+| Product pages | one page per inflatable, with specs and photos |
+| Area pages | "inflatable hire [town]" for each main town |
+| Event pages | schools, corporate fun days, festivals, children's parties |
+| Guides | safety, power and space requirements, weather advice |
+
+Once those foundations are in place, I move on to guides, link building and, where it makes sense, press releases. [Read more about how I work](/how-i-work/).
+
+### Frequently asked questions
+
+<details>
+<summary>What is the difference between bouncy castle SEO and inflatable hire SEO?</summary>
+
+There is a lot of overlap. Inflatable hire SEO covers the wider range, such as assault courses, giant slides and interactive games, which often appeal to schools, businesses and event organisers as well as parents.
+
+</details>
+
+<details>
+<summary>Do my inflatables need their own pages?</summary>
+
+Yes, ideally. Individual product pages let you rank for specific searches and give customers the details they need before they book.
+
+</details>
+
+<details>
+<summary>Can you help me reach schools and businesses?</summary>
+
+Yes. I write event pages aimed at schools, PTAs and companies, covering the things they care about, such as risk assessments, insurance and staffing.
+
+</details>
+
+For castles specifically, see [bouncy castle SEO](/bouncy-castle-seo/). For the toddler market, see [soft play hire SEO](/soft-play-hire-seo/).
+
 ## Talk to me about your inflatable hire business
 
 Email **[info@kevinburkeservices.com](mailto:info@kevinburkeservices.com)** with your website and the areas you cover.
-
-### Other hire businesses I help
-
-[Bouncy castle SEO](/bouncy-castle-seo/) · [Inflatable hire SEO](/inflatable-hire-seo/) · [Soft play hire SEO](/soft-play-hire-seo/) · [Event hire SEO](/event-hire-seo/) · [Party rental SEO](/party-rental-seo/) · [Marquee hire SEO](/marquee-hire-seo/) · [Funfair hire SEO](/funfair-hire-seo/) · [Portable toilet hire SEO](/portable-toilet-hire-seo/) · [Bounce house rental SEO](/bounce-house-rental-seo/)

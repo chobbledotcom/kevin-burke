@@ -4,6 +4,10 @@ heading: "Bounce House Rental SEO"
 link_title: "Bounce House SEO"
 link_order: 3
 description: "SEO for bounce house and inflatable rental companies. Rank in every city you serve with local pages, product content and directory links that win bookings."
+nav_group: services
+image: "/assets/images/bounce-house-rental-seo.jpg"
+image_alt: "Inflatable water slide splashing into a pool"
+summary: "SEO for US bounce house, water slide and party rental companies."
 ---
 
 ## Get your bounce house rentals found on Google
@@ -27,10 +31,47 @@ I write SEO content for inflatable and party rental companies, and I already hel
 - Fair, affordable pricing, as a one-off job or a monthly service.
 - You don't need to chase me. I get on with the work and keep you updated.
 
+
+### An example site structure
+
+I start every project by planning the site's structure, then build each page around it. Every business is different, but a typical plan looks something like this:
+
+| Section | What goes in it |
+|---|---|
+| Home page | your service area, top rentals and how to reserve |
+| Rental pages | bounce houses, combos, water slides, obstacle courses and extras |
+| City pages | "bounce house rentals [city]" for each city and suburb you serve |
+| Event pages | birthdays, school carnivals, church events, corporate picnics |
+| Policies | delivery area, weather policy, setup surfaces and deposits |
+| Guides | water slide safety, yard space, planning a backyard party |
+
+Once those foundations are in place, I move on to guides, link building and, where it makes sense, press releases. [Read more about how I work](/how-i-work/).
+
+### Frequently asked questions
+
+<details>
+<summary>Do you work with US businesses?</summary>
+
+Yes. I write in US English for American clients and build pages around the way US customers search, for example "bounce house rentals" and "party rentals near me".
+
+</details>
+
+<details>
+<summary>Should water slides have their own pages?</summary>
+
+Usually, yes. Water slides are a big seasonal search in many areas, so dedicated pages for each slide and a water slide category page tend to pay off.
+
+</details>
+
+<details>
+<summary>Can you help with city pages for a large service area?</summary>
+
+Yes. I build city pages that each say something specific about the area, such as delivery notes, popular venues and parks, rather than copying the same text with a different city name.
+
+</details>
+
+Most of my bouncy castle work is in the UK, so you might also like [bouncy castle SEO](/bouncy-castle-seo/) and [party rental SEO](/party-rental-seo/).
+
 ## Ready to fill your calendar?
 
 Email **[info@kevinburkeservices.com](mailto:info@kevinburkeservices.com)** with your website and the cities you serve, and I'll send you some ideas.
-
-### Other hire businesses I help
-
-[Bouncy castle SEO](/bouncy-castle-seo/) · [Inflatable hire SEO](/inflatable-hire-seo/) · [Soft play hire SEO](/soft-play-hire-seo/) · [Event hire SEO](/event-hire-seo/) · [Party rental SEO](/party-rental-seo/) · [Marquee hire SEO](/marquee-hire-seo/) · [Funfair hire SEO](/funfair-hire-seo/) · [Portable toilet hire SEO](/portable-toilet-hire-seo/) · [Bounce house rental SEO](/bounce-house-rental-seo/)

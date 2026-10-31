@@ -1,6 +1,7 @@
 ---
 title: Other Businesses
 heading: Other Businesses
+hide_related: true
 ---
 
 I’m happy to recommend a range of different businesses in the website design and marketing industry!
