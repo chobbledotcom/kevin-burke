@@ -31,7 +31,7 @@ I help party rental and party hire companies in the UK, Ireland and the USA rank
 - **Category and product pages** that describe your kit clearly and match what people search for.
 - **Local pages** for each town or city you cover.
 - **Party and event guides** such as birthday ideas, wedding extras, school fun days and corporate parties that answer customer questions and bring in traffic.
-- **Directory profiles** on the party hire and event directories I run.
+- **Directory profiles** on the directories I run that fit your area.
 - **Link building, press releases and review management** to build trust.
 - **PPC campaigns** for peak dates when you want bookings straight away.
 

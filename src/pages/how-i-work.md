@@ -32,7 +32,7 @@ Once the foundations are in place, I add guides that answer your customers' ques
 
 ### 4. Link building
 
-I build relevant, authoritative links to your site from sources that make sense for a hire business, including listings on [my own directory network](/directory-network/).
+I build relevant, authoritative links to your site from sources that make sense for a hire business, plus listings on [the directories I run](/directory-network/) where they genuinely fit your business.
 
 ### 5. Press releases when they're useful
 

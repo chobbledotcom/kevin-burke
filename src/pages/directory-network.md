@@ -1,37 +1,34 @@
 ---
-title: "My Directory Network | Kevin Burke Web Marketing"
-heading: "My Directory Network"
-description: "Kevin Burke runs a network of 15 directory websites for party hire, events and local businesses in the UK, Ireland and the USA. Clients can be listed."
+title: "Directory Listings for Hire Businesses | Kevin Burke"
+heading: "Directory Listings"
+description: "Kevin Burke runs independent directory websites for regions and niches across the UK, Ireland and the USA. A listing puts your hire business in front of new customers."
 image: "/assets/images/directory-network.jpg"
 image_alt: "Carousel horses on a traditional fairground ride"
 ---
 
-## Directories built for hire businesses
+## More places for customers to find you
 
-As well as working on your own website, I own and run a network of 15 directory websites covering party hire, event suppliers and local business services across the UK, Ireland and the USA. Between them they hold more than 500 business listings.
+As well as working on your own website, I run a handful of independent directory websites. Each one has its own focus: a region such as Kent, Surrey, Cambridgeshire, London, the Wirral or Ireland, or a niche such as schools, specialist hire, festivals and event infrastructure, or US party rentals.
 
-Each listing gets its own profile page with a description of the business, the areas it covers, the services it offers and a link to its website. The sites are grouped by region and by service, so customers can find suppliers that actually cover their area.
+They are proper directories. Alongside the businesses I work with, they list other independent local firms that fit the site's focus, so visitors get a genuinely useful list and a real choice of suppliers.
 
-### What's in the network
+### What a listing does for you
 
-- **Regional directories** covering areas such as Kent, Surrey, Cambridge, the Wirral and the island of Ireland
-- **Party and bouncy castle hire directories**, such as Bouncy Castles Near Me, listing local firms by region
-- **General business and event directories** for marquees, funfairs, toilets, fencing, AV, transport and more
-- **Niche directories**, such as one aimed at schools organising trips and fun days
+- **Exposure.** Your business appears where people are already browsing for suppliers in your area or specialism.
+- **Referrals.** Visitors click straight through to your website or pick up the phone, so a listing can turn into enquiries.
+- **A clear profile.** Your listing sets out what you offer, the areas you cover and the occasions you're good for, written by someone who knows the hire industry.
+- **Consistent details.** Your business name, area and website shown the same way, which helps customers trust what they find.
 
-Two examples:
+A listing is only placed on a directory whose region or niche genuinely fits your business. A bouncy castle firm in Kent belongs on a Kent site; a funfair operator belongs on a specialist hire site. That keeps every directory useful to the people reading it.
 
-- [Bouncy Castles Near Me](https://bouncycastlesnearme.co.uk/): bouncy castle hire companies across the UK, listed by region
-- [Find A School Trip](https://findaschooltrip.com/): learning tools, school trips and fun-day suppliers for schools
+### How listings fit with the rest of my work
 
-### How listings help my clients
+Directory listings are a small part of what I do. The main work is on your own website: the site structure, the area and service pages, the content and your Google Business Profile. Listings sit alongside that as one more route for customers to find you. [See how I work](/how-i-work/).
 
-- A relevant, descriptive page about your business on sites built for your customers
-- Consistent details about your business across the web
-- Extra routes for customers to find you
+### Already listed and want a change?
 
-Listings are part of how I work with clients, alongside the work on your own website. [See how I work](/how-i-work/).
+Any business on one of my directories can ask for its listing to be updated or removed at any time. Email me and I'll sort it promptly.
 
 ## Want to be listed?
 
-Email **[info@kevinburkeservices.com](mailto:info@kevinburkeservices.com)** with your business name, website and the areas you cover.
+Email **[info@kevinburkeservices.com](mailto:info@kevinburkeservices.com)** with your business name, website and the areas you cover, and I'll let you know which directory is the right fit.

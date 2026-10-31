@@ -22,7 +22,7 @@ Funfair and ride hire customers range from parents planning a big birthday to sc
 - **Content that answers planners' questions:** space and power needs, staffing, safety documents and how bookings work.
 - **Links and press releases** to build authority, for example when you supply a big local event.
 
-I already list funfair and ride hire companies on [my directory network](/directory-network/). [See how I work](/how-i-work/).
+I already work with funfair and ride hire companies, and I run [a specialist hire directory](/directory-network/) where they can be listed. [See how I work](/how-i-work/).
 
 
 ### An example site structure

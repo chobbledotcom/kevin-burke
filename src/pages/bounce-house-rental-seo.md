@@ -14,7 +14,7 @@ summary: "SEO for US bounce house, water slide and party rental companies."
 
 When a parent needs a bounce house or water slide for the weekend, they search "bounce house rentals near me" and call one of the first few companies they see. If your rental business isn't on page one for the towns you serve, those bookings go to your competitors.
 
-I write SEO content for inflatable and party rental companies, and I already help rental firms in Texas, California and Arizona reach more customers through my directory websites.
+I write SEO content for inflatable and party rental companies, and I already work with rental firms in Texas, California and Arizona.
 
 ### What bounce house rental SEO includes
 
@@ -22,7 +22,7 @@ I write SEO content for inflatable and party rental companies, and I already hel
 - **Product pages** for your bounce houses, combo units, water slides, obstacle courses and add-ons, with the details customers look for: size, set-up space, power, age groups and wet or dry use.
 - **Seasonal content** for summer water slide season, school events, church festivals, back-to-school and holiday parties.
 - **Google Business Profile optimisation** so you show in the map pack when people search nearby.
-- **Directory listings** on my network of party rental and event directories, which already feature bounce house companies in Dallas, Fort Worth, East Texas, Redding and Phoenix.
+- **Directory listings** on the US party rental directory I run, for extra exposure and referrals.
 - **Relevant links** from family, event and local business websites.
 
 ### Why rental companies work with me

@@ -18,9 +18,9 @@ I started focusing on hire businesses because they have a clear problem I can fi
 
 The online marketing industry is full of companies that charge a lot and do very little beyond analysis. Agencies offering proper content writing or link building often charge a fortune for it. I offer a full SEO and marketing service with high-quality content and relevant, authoritative links at a fair price, as a one-off job or an ongoing service.
 
-### My directory network
+### My directory sites
 
-I own and run [a network of directory websites covering party hire, events and local business services across the UK, Ireland and the USA](/directory-network/). My clients can be listed on the sites that suit their area, with their own profile page and a link to their website.
+I also run [a few independent directory websites](/directory-network/), each focused on a region or a niche. They list local firms that fit, and clients can appear on the ones that suit their area, which brings extra exposure and referrals.
 
 ### Not in event hire?
 

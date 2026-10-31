@@ -31,7 +31,7 @@ I help event hire companies show up in those searches, and look like the obvious
 - **Service pages** for each thing you hire out, written for the people who book it: wedding couples, event managers, schools and businesses.
 - **Location pages** for the areas and venues you work in, so you rank beyond your home town.
 - **Event-type content** for weddings, festivals, corporate days, school fairs and community events.
-- **Directory profiles** on my network of event and business directories in the UK, Ireland and the USA.
+- **Directory profiles** on the event and business directories I run, where they fit your area or specialism.
 - **Link building, press releases and reputation management** to build trust with Google and with customers.
 - **PPC** if you need enquiries quickly for a busy season.
 

@@ -20,7 +20,7 @@ I'm Kevin Burke, a Manchester-based SEO and content writer. Event hire SEO is wh
 
 - **Local SEO** – getting you seen for "bouncy castle hire [your town]" in every town you deliver to, not just the one you're based in.
 - **Content writing** – product pages, town pages, seasonal pages and blog posts written for parents, schools and event organisers, the people who actually book.
-- **Directory listings** – I run [a network of 15 directory websites](/directory-network/) for party hire, events and local businesses across the UK, Ireland and the USA. My clients get a full profile page on the ones that fit their area.
+- **Directory listings** – I run [independent directory websites](/directory-network/) for particular regions and niches. Clients can appear on the ones that fit their area, for extra exposure and referrals.
 - **Link building** – relevant, authoritative links from sites that make sense for an event hire business.
 - **Press releases and reputation** – news coverage for the things you're doing anyway, and help keeping your reviews and online reputation in good shape.
 - **PPC** – Google Ads for busy weekends and peak season, if you want bookings while your organic rankings grow.
@@ -30,7 +30,7 @@ More detail: [Bouncy castle SEO](/bouncy-castle-seo/) · [Inflatable hire SEO](/
 ### Why event hire businesses use me
 
 - **I know the industry.** I already write for bouncy castle, soft play and event hire firms across the UK and Ireland, so you don't pay me to learn what a disco dome, a combi or a PIPA tag is.
-- **My own directory sites.** Every client can be listed on directory sites I own and run, built for the same customers you're trying to reach.
+- **My own directory sites.** Clients can be listed on directories I run that fit their area, in front of the same customers they're trying to reach.
 - **Low prices, real work.** A lot of agencies charge a fortune and send back a report. I write the content and build the links myself, at a fair price.
 - **You don't have to chase me.** My clients mention this more than anything else.
 

@@ -24,7 +24,7 @@ Most inflatable hire companies deliver to dozens of towns but only rank in the o
 
 ### Why hire companies use me
 
-I work almost entirely with hire businesses, and I run [my own network of directory sites](/directory-network/) where clients get listed. You don't pay me to learn your industry.
+I work almost entirely with hire businesses, and I run [my own directory sites](/directory-network/) for extra exposure. You don't pay me to learn your industry.
 
 > "Kevin has been a great help for my website and has written brilliant content. He always responds very quickly and you never have to chase him for anything."
 > **Bounce Back Castles**
