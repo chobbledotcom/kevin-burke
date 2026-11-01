@@ -10,3 +10,5 @@ image_alt: "Children jumping on a bouncy castle"
 ---
 
 Here's what some of my clients say about working with me. Most of them run bouncy castle and party hire businesses.
+
+Every one of the 10 reviews on [my Facebook page](https://www.facebook.com/kevinburkeseo/reviews) recommends me. You can read them all there, and they're collected below.
