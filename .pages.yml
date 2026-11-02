@@ -21,6 +21,11 @@ content:
       - { name: link_order, type: number, label: Navigation Order }
       - { name: description, type: string, label: Meta Description }
       - { name: permalink, type: string, label: Permalink }
+      - { name: nav_group, type: string, label: Navigation Group }
+      - { name: summary, type: string, label: Card Summary }
+      - { name: image, type: string, label: Image Path }
+      - { name: image_alt, type: string, label: Image Alt Text }
+      - { name: hide_related, type: boolean, label: Hide Related Services }
       - { name: layout, type: string, label: Layout, default: "page.html" }
       - { name: body, label: Body Content, type: code, options: { language: markdown } }
 
