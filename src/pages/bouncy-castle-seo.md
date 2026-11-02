@@ -1,15 +1,18 @@
 ---
-title: "Bouncy Castle SEO | Kevin Burke Web Marketing"
-heading: "Bouncy Castle SEO"
-link_title: "Bouncy Castle SEO"
+title: Bouncy Castle SEO | Kevin Burke Web Marketing
+heading: Bouncy Castle SEO
+link_title: Bouncy Castle SEO
 link_order: 1
-description: "SEO for bouncy castle and soft play hire companies. Rank in the towns you deliver to with local SEO, content and directory links from a specialist."
+description: SEO for bouncy castle and soft play hire companies. Rank in the
+  towns you deliver to with local SEO, content and directory links from a
+  specialist.
 nav_group: services
-image: "/assets/images/bouncy-castle-seo.jpg"
-image_alt: "Red bouncy castle in a garden among blossom trees"
-summary: "Town pages, product pages and links that put your castles in front of local parents."
+summary: Town pages, product pages and links that put your castles in front of
+  local parents.
+image: /assets/images/bouncy-castle-seo.jpg
+image_alt: Red bouncy castle in a garden among blossom trees
+layout: page.html
 ---
-
 ## Be the first bouncy castle company parents find
 
 Bouncy castle hire is a local, last-minute search. Parents and party planners type "bouncy castle hire near me" or "bouncy castle hire [town]" and ring one of the top few results. If you're not there, the booking goes to someone who is.
@@ -20,7 +23,7 @@ I work with bouncy castle and soft play firms across the UK and Ireland, and I b
 
 - **Town pages that rank.** A useful page for each main area you cover, written for local parents, not a copy-and-paste list of postcodes.
 - **Product pages that sell.** Clear, keyword-friendly descriptions of your castles, combis, slides, disco domes, soft play and add-ons, with the details customers ask about: size, power, suitable ages and indoor or outdoor use.
-- **Seasonal content.** Summer holidays, school fun days, Halloween, Christmas and New Year: content that brings in bookings before your busy dates.
+- **Seasonal content.** Summer holidays, school fun days, Halloween, Christmas and New Year: content that brings in bookings before your busy dates. See my [seasonal event SEO](/seasonal-event-seo/) pages.
 - **Google Business Profile help** so you show up in the map results as well as the normal listings.
 - **Directory listings.** A profile on the party hire directories I run, such as Bouncy Castles Near Me, which lists bouncy castle firms by region.
 - **Links from relevant sites,** including event, family and local business sites, not random link farms.
@@ -72,6 +75,8 @@ Yes. I write product copy that covers what parents actually ask about, such as d
 The map pack depends heavily on your Google Business Profile, reviews and local relevance. I help you set that up properly and keep it in line with your website, which gives you the best chance.
 
 </details>
+
+Prefer to do some of it yourself? My [bouncy castle SEO guides](/bouncy-castle-seo-guides/) cover town pages, Google Business Profile, reviews and more.
 
 If you also hire out soft play, see [soft play hire SEO](/soft-play-hire-seo/). For a wider inflatable range, see [inflatable hire SEO](/inflatable-hire-seo/). Serving the US market? See [bounce house rental SEO](/bounce-house-rental-seo/).
 
