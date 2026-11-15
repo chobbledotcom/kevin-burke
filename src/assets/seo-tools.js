@@ -117,4 +117,72 @@
       var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })); a.download = 'sitemap-urls.csv'; a.click();
     });
   }
+
+  /* ---------- Google review link generator ---------- */
+  var rv = $('kb-review-tool');
+  if (rv) {
+    var link = '';
+    var copy = function (text, btn) {
+      var done = function () { var o = btn.textContent; btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = o; }, 1500); };
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(done); else { var t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); done(); }
+    };
+    var build = function () {
+      var raw = $('kb-place-id').value.trim(), name = $('kb-biz').value.trim() || 'us';
+      $('kb-rv-error').textContent = '';
+      if (!raw) { $('kb-rv-out').hidden = true; return; }
+      if (/^https?:\/\//i.test(raw)) {
+        if (!/(google\.[a-z.]+|g\.page|goo\.gl|maps\.app\.goo\.gl)/i.test(raw)) { $('kb-rv-error').textContent = 'That link doesn\'t look like a Google link. Paste a Place ID or the review link from your Google Business Profile.'; $('kb-rv-out').hidden = true; return; }
+        link = raw;
+      } else if (/^[A-Za-z0-9_-]{15,}$/.test(raw)) {
+        link = 'https://search.google.com/local/writereview?placeid=' + raw;
+      } else { $('kb-rv-error').textContent = 'That doesn\'t look like a Place ID. They are a long string of letters and numbers, often starting "ChIJ".'; $('kb-rv-out').hidden = true; return; }
+      $('kb-rv-link').value = link;
+      $('kb-rv-test').href = link;
+      if (window.qrcode) {
+        var q = window.qrcode(0, 'M'); q.addData(link); q.make();
+        $('kb-rv-qr').innerHTML = q.createSvgTag({ cellSize: 6, margin: 4, scalable: true });
+      } else { $('kb-rv-qr').textContent = 'The QR code couldn\'t load. Refresh the page to try again.'; }
+      var biz = name === 'us' ? 'us' : name;
+      $('kb-msg-text').value = 'Thanks for choosing ' + biz + '! We hope you had a brilliant time. If you have a minute, a quick Google review would really help us: ' + link;
+      $('kb-msg-email').value = 'Subject: Thank you, and a quick favour\n\nHi [name],\n\nThank you for booking with ' + biz + '. We hope everyone had a great time.\n\nIf you could spare a minute to leave us a Google review, it would mean a lot and helps other families find us:\n' + link + '\n\nThanks again,\n[your name]';
+      $('kb-msg-card').value = 'Enjoyed your hire? Scan to leave us a Google review. It only takes a minute and helps other families find ' + (name === 'us' ? 'us' : name) + '.';
+      $('kb-rv-out').hidden = false;
+    };
+    ['kb-place-id', 'kb-biz'].forEach(function (id) { $(id).addEventListener('input', build); });
+    document.querySelectorAll('[data-copy]').forEach(function (b) { b.addEventListener('click', function () { copy($(b.getAttribute('data-copy')).value, b); }); });
+    $('kb-rv-png').addEventListener('click', function () {
+      var svg = $('kb-rv-qr').querySelector('svg'); if (!svg) return;
+      var data = new XMLSerializer().serializeToString(svg), img = new Image(), size = 1000;
+      img.onload = function () {
+        var c = document.createElement('canvas'); c.width = c.height = size; var x = c.getContext('2d');
+        x.fillStyle = '#fff'; x.fillRect(0, 0, size, size); x.drawImage(img, 0, 0, size, size);
+        var a = document.createElement('a'); a.href = c.toDataURL('image/png'); a.download = 'google-review-qr-code.png'; a.click();
+      };
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(data);
+    });
+    build();
+  }
+
+  /* ---------- Missed bookings calculator ---------- */
+  var mb = $('kb-missed-tool');
+  if (mb) {
+    var RATE = { '5': 45, '60': 40, '360': 30, '1440': 20, '2880': 10 };
+    var gbp = function (n) { return '£' + Math.round(n).toLocaleString('en-GB'); };
+    var syncRate = function () { if (!$('kb-mb-now').dataset.touched) $('kb-mb-now').value = RATE[$('kb-mb-reply').value]; };
+    var calc = function () {
+      var enq = parseFloat($('kb-mb-enq').value) || 0, val = parseFloat($('kb-mb-val').value) || 0, months = parseFloat($('kb-mb-months').value) || 0;
+      var now = (parseFloat($('kb-mb-now').value) || 0) / 100, fast = (parseFloat($('kb-mb-fast').value) || 0) / 100;
+      var bNow = enq * now, bFast = enq * fast, extra = Math.max(0, bFast - bNow);
+      $('kb-mb-out').innerHTML = '<div class="kb-cards">' +
+        '<div><span>Bookings now</span><b>' + Math.round(bNow) + '</b><small>a month in busy season</small></div>' +
+        '<div><span>With fast replies</span><b>' + Math.round(bFast) + '</b><small>a month in busy season</small></div>' +
+        '<div class="hl"><span>Extra bookings</span><b>' + Math.round(extra) + '</b><small>a month, worth about ' + gbp(extra * val) + '</small></div>' +
+        '<div class="hl"><span>Over your busy season</span><b>' + gbp(extra * val * months) + '</b><small>across ' + months + ' month' + (months === 1 ? '' : 's') + '</small></div></div>' +
+        (fast <= now ? '<p class="kb-count">Your replies are already fast, so there is little to gain here. Nice work.</p>' : '');
+    };
+    $('kb-mb-reply').addEventListener('change', function () { syncRate(); calc(); });
+    $('kb-mb-now').addEventListener('input', function () { $('kb-mb-now').dataset.touched = '1'; });
+    ['kb-mb-enq', 'kb-mb-val', 'kb-mb-months', 'kb-mb-now', 'kb-mb-fast'].forEach(function (id) { $(id).addEventListener('input', calc); });
+    syncRate(); calc();
+  }
 })();
