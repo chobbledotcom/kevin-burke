@@ -185,4 +185,169 @@
     ['kb-mb-enq', 'kb-mb-val', 'kb-mb-months', 'kb-mb-now', 'kb-mb-fast'].forEach(function (id) { $(id).addEventListener('input', calc); });
     syncRate(); calc();
   }
+
+  var copyText = function (text, btn) {
+    var done = function () { var o = btn.textContent; btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = o; }, 1500); };
+    if (navigator.clipboard) navigator.clipboard.writeText(text).then(done); else { var t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); done(); }
+  };
+  document.querySelectorAll('[data-copy2]').forEach(function (b) { b.addEventListener('click', function () { copyText($(b.getAttribute('data-copy2')).value, b); }); });
+
+  /* ---------- Word counter ---------- */
+  var wc = $('kb-wc-tool');
+  if (wc) {
+    var STOP = 'a,an,and,are,as,at,be,but,by,for,from,has,have,i,if,in,into,is,it,its,of,on,or,our,so,that,the,their,them,there,they,this,to,was,we,were,will,with,you,your,can,all,not,no,yes,do,does,did,just,also,more,than,then,up,out,what,when,which,who,how,us,my,me,he,she,his,her,been,being,would,could,should,about,over,any,some,very,one,get,got,i\'m,it\'s,we\'re,you\'re'.split(',');
+    var syll = function (w) { w = w.toLowerCase().replace(/[^a-z]/g, ''); if (w.length <= 3) return 1; w = w.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '').replace(/^y/, ''); var m = w.match(/[aeiouy]{1,2}/g); return m ? m.length : 1; };
+    var LIMITS = [['Page title (approx.)', 60], ['Meta description (approx.)', 155], ['Google Business Profile description', 750], ['Google Business Profile post', 1500], ['X (Twitter) post', 280]];
+    var count = function () {
+      var t = $('kb-wc-text').value, words = t.match(/[A-Za-z0-9À-ɏ']+(?:[-'][A-Za-z0-9À-ɏ]+)*/g) || [];
+      var chars = t.length, noSpace = t.replace(/\s/g, '').length;
+      var sentences = (t.match(/[^.!?]+[.!?]+(\s|$)/g) || []).length || (words.length ? 1 : 0);
+      var paras = t.split(/\n\s*\n/).filter(function (x) { return x.trim(); }).length;
+      var syl = words.reduce(function (a, w) { return a + syll(w); }, 0);
+      var fre = words.length && sentences ? 206.835 - 1.015 * (words.length / sentences) - 84.6 * (syl / words.length) : 0;
+      var ease = !words.length ? '–' : fre >= 70 ? 'Easy' : fre >= 60 ? 'Plain English' : fre >= 50 ? 'Fairly hard' : 'Hard';
+      var mins = function (wpm) { var m = words.length / wpm; return m < 1 ? Math.max(1, Math.round(m * 60)) + ' sec' : Math.round(m) + ' min'; };
+      $('kb-wc-stats').innerHTML = '<div class="kb-cards">' +
+        '<div><span>Words</span><b>' + words.length.toLocaleString('en-GB') + '</b></div>' +
+        '<div><span>Characters</span><b>' + chars.toLocaleString('en-GB') + '</b><small>' + noSpace.toLocaleString('en-GB') + ' without spaces</small></div>' +
+        '<div><span>Sentences</span><b>' + sentences + '</b><small>' + paras + ' paragraph' + (paras === 1 ? '' : 's') + '</small></div>' +
+        '<div><span>Reading time</span><b>' + (words.length ? mins(200) : '–') + '</b><small>speaking: ' + (words.length ? mins(130) : '–') + '</small></div>' +
+        '<div><span>Readability</span><b>' + (words.length ? Math.round(fre) : '–') + '</b><small>' + ease + ' (Flesch reading ease)</small></div></div>';
+      var freq = {};
+      words.forEach(function (w) { w = w.toLowerCase(); if (w.length > 2 && STOP.indexOf(w) === -1) freq[w] = (freq[w] || 0) + 1; });
+      var top = Object.keys(freq).sort(function (a, b) { return freq[b] - freq[a]; }).slice(0, 10);
+      $('kb-wc-top').innerHTML = top.length ? '<table><thead><tr><th>Word</th><th>Times</th><th>Share of words</th></tr></thead><tbody>' + top.map(function (w) { return '<tr><td>' + esc(w) + '</td><td>' + freq[w] + '</td><td>' + (freq[w] / words.length * 100).toFixed(1) + '%</td></tr>'; }).join('') + '</tbody></table>' : '<p class="kb-count">Type or paste some text to see your most-used words.</p>';
+      $('kb-wc-limits').innerHTML = '<ul class="kb-tips">' + LIMITS.map(function (l) { var ok = chars <= l[1]; return '<li class="' + (chars ? (ok ? 'good' : 'bad') : 'info') + '">' + esc(l[0]) + ': ' + chars + ' of ' + l[1] + ' characters' + (chars && !ok ? ' (' + (chars - l[1]) + ' over)' : '') + '</li>'; }).join('') + '</ul>';
+    };
+    $('kb-wc-text').addEventListener('input', count); count();
+  }
+
+  /* ---------- Find and replace ---------- */
+  var fr = $('kb-fr-tool');
+  if (fr) {
+    var addRow = function (f, r) {
+      var d = document.createElement('div'); d.className = 'kb-fr-row';
+      d.innerHTML = '<input type="text" aria-label="Find" placeholder="Find"><input type="text" aria-label="Replace with" placeholder="Replace with"><button type="button" class="sec" aria-label="Remove this pair">×</button>';
+      d.children[0].value = f || ''; d.children[1].value = r || '';
+      d.children[2].addEventListener('click', function () { d.remove(); run(); });
+      d.addEventListener('input', run);
+      $('kb-fr-rows').appendChild(d);
+    };
+    var run = function () {
+      var text = $('kb-fr-in').value, total = 0, err = '';
+      var flags = $('kb-fr-case').checked ? 'g' : 'gi', whole = $('kb-fr-whole').checked, rx = $('kb-fr-regex').checked;
+      document.querySelectorAll('.kb-fr-row').forEach(function (row) {
+        var f = row.children[0].value, r = row.children[1].value; if (!f) return;
+        var pat = rx ? f : f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        if (whole) pat = '\\b' + pat + '\\b';
+        try {
+          var re = new RegExp(pat, flags), m = text.match(re); total += m ? m.length : 0;
+          text = text.replace(re, rx ? r : r.replace(/\$/g, '$$$$'));
+        } catch (e) { err = 'One of your patterns isn\'t valid: ' + e.message; }
+      });
+      $('kb-fr-out').value = text;
+      $('kb-fr-count').textContent = err || (total + ' replacement' + (total === 1 ? '' : 's') + ' made');
+    };
+    $('kb-fr-add').addEventListener('click', function () { addRow(); });
+    ['kb-fr-in', 'kb-fr-case', 'kb-fr-whole', 'kb-fr-regex'].forEach(function (id) { $(id).addEventListener('input', run); $(id).addEventListener('change', run); });
+    addRow('Manchester', 'Stockport'); addRow('M1', 'SK1'); run();
+  }
+
+  /* ---------- HTML cleaner ---------- */
+  var hc = $('kb-hc-tool');
+  if (hc) {
+    var opt = function (id) { return $(id).checked; };
+    var KEEP_ATTR = ['href', 'src', 'alt', 'title', 'colspan', 'rowspan'];
+    var toMd = function (node) {
+      var out = '';
+      node.childNodes.forEach(function (n) {
+        if (n.nodeType === 3) { out += n.textContent.replace(/\s+/g, ' '); return; }
+        if (n.nodeType !== 1) return;
+        var tag = n.tagName.toLowerCase(), inner = toMd(n);
+        if (/^h[1-6]$/.test(tag)) out += '\n\n' + '#'.repeat(+tag[1]) + ' ' + inner.trim() + '\n\n';
+        else if (tag === 'p' || tag === 'div') out += '\n\n' + inner.trim() + '\n\n';
+        else if (tag === 'br') out += '  \n';
+        else if (tag === 'strong' || tag === 'b') out += inner.trim() ? '**' + inner.trim() + '**' : '';
+        else if (tag === 'em' || tag === 'i') out += inner.trim() ? '_' + inner.trim() + '_' : '';
+        else if (tag === 'a') out += '[' + inner.trim() + '](' + (n.getAttribute('href') || '') + ')';
+        else if (tag === 'img') out += '![' + (n.getAttribute('alt') || '') + '](' + (n.getAttribute('src') || '') + ')';
+        else if (tag === 'ul' || tag === 'ol') {
+          var i = 0; out += '\n\n';
+          n.childNodes.forEach(function (li) { if (li.nodeType === 1 && li.tagName.toLowerCase() === 'li') { i++; out += (tag === 'ol' ? i + '. ' : '- ') + toMd(li).trim().replace(/\n+/g, ' ') + '\n'; } });
+          out += '\n';
+        } else if (tag === 'blockquote') out += '\n\n> ' + inner.trim().replace(/\n+/g, '\n> ') + '\n\n';
+        else if (tag === 'hr') out += '\n\n---\n\n';
+        else if (tag === 'code') out += '`' + inner + '`';
+        else out += inner;
+      });
+      return out;
+    };
+    var clean = function () {
+      var src = $('kb-hc-in').value, doc = new DOMParser().parseFromString('<body>' + src + '</body>', 'text/html'), body = doc.body;
+      body.querySelectorAll('script,style,meta,link,title,noscript,iframe,object,embed,form,input,button,xml').forEach(function (n) { n.remove(); });
+      if (opt('kb-hc-comments')) { var w = doc.createTreeWalker(body, 128), c = [], x; while ((x = w.nextNode())) c.push(x); c.forEach(function (n) { n.remove(); }); }
+      body.querySelectorAll('*').forEach(function (el) {
+        var name = el.tagName.toLowerCase();
+        if (name.indexOf(':') > -1) { el.replaceWith.apply(el, Array.prototype.slice.call(el.childNodes)); return; }
+        Array.prototype.slice.call(el.attributes).forEach(function (a) {
+          var n = a.name.toLowerCase();
+          if (/^on/.test(n)) { el.removeAttribute(a.name); return; }
+          if (opt('kb-hc-attrs') && KEEP_ATTR.indexOf(n) === -1) { el.removeAttribute(a.name); return; }
+          if (opt('kb-hc-styles') && (n === 'style' || n === 'align' || n === 'face' || n === 'color' || n === 'size' || n === 'bgcolor' || n === 'width' || n === 'height')) el.removeAttribute(a.name);
+          if (opt('kb-hc-classes') && (n === 'class' || n === 'id' || /^data-/.test(n) || /^aria-/.test(n) || n === 'dir' || n === 'lang')) el.removeAttribute(a.name);
+          if (n === 'href' && /^\s*javascript:/i.test(a.value)) el.removeAttribute(a.name);
+        });
+      });
+      if (opt('kb-hc-spans')) body.querySelectorAll('span,font').forEach(function (el) { el.replaceWith.apply(el, Array.prototype.slice.call(el.childNodes)); });
+      if (opt('kb-hc-empty')) { for (var k = 0; k < 3; k++) body.querySelectorAll('p,span,div,strong,b,em,i,u,h1,h2,h3,h4,h5,h6,li,a:not([href])').forEach(function (el) { if (!el.textContent.replace(/ /g, ' ').trim() && !el.querySelector('img,br,hr,iframe')) el.remove(); }); }
+      var html = body.innerHTML.replace(/&nbsp;/g, opt('kb-hc-nbsp') ? ' ' : '&nbsp;').replace(/\n{3,}/g, '\n\n').trim();
+      var md = opt('kb-hc-md');
+      $('kb-hc-out').value = md ? toMd(body).replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim() : html;
+      $('kb-hc-out-label').textContent = md ? 'Cleaned Markdown' : 'Cleaned HTML';
+      $('kb-hc-stats').textContent = src.length ? 'Before: ' + src.length.toLocaleString('en-GB') + ' characters. After: ' + $('kb-hc-out').value.length.toLocaleString('en-GB') + ' characters.' : '';
+      $('kb-hc-preview').srcdoc = '<!doctype html><meta charset="utf-8"><style>body{font:15px/1.5 Arial,sans-serif;color:#222;margin:12px}img{max-width:100%}</style>' + html;
+    };
+    hc.addEventListener('input', clean); hc.addEventListener('change', clean); clean();
+  }
+
+  /* ---------- Local business schema generator ---------- */
+  var sg = $('kb-schema-tool');
+  if (sg) {
+    var val = function (id) { return $(id).value.trim(); };
+    var list = function (id, sep) { return val(id).split(sep).map(function (x) { return x.trim(); }).filter(Boolean); };
+    var gen = function () {
+      var o = { '@context': 'https://schema.org', '@type': val('kb-sg-type') };
+      if (val('kb-sg-name')) o.name = val('kb-sg-name');
+      if (val('kb-sg-desc')) o.description = val('kb-sg-desc');
+      if (val('kb-sg-url')) { o.url = val('kb-sg-url'); o['@id'] = val('kb-sg-url').replace(/\/?$/, '/') + '#business'; }
+      if (val('kb-sg-logo')) o.logo = val('kb-sg-logo');
+      if (val('kb-sg-image')) o.image = val('kb-sg-image');
+      if (val('kb-sg-phone')) o.telephone = val('kb-sg-phone');
+      if (val('kb-sg-email')) o.email = val('kb-sg-email');
+      var addr = { '@type': 'PostalAddress' }, hide = $('kb-sg-hide').checked;
+      if (val('kb-sg-street') && !hide) addr.streetAddress = val('kb-sg-street');
+      if (val('kb-sg-town')) addr.addressLocality = val('kb-sg-town');
+      if (val('kb-sg-region')) addr.addressRegion = val('kb-sg-region');
+      if (val('kb-sg-postcode') && !hide) addr.postalCode = val('kb-sg-postcode');
+      addr.addressCountry = val('kb-sg-country') || 'GB';
+      if (Object.keys(addr).length > 2) o.address = addr;
+      var areas = list('kb-sg-areas', ',');
+      if (areas.length) o.areaServed = areas.map(function (a) { return { '@type': 'City', name: a }; });
+      var days = Array.prototype.slice.call(document.querySelectorAll('.kb-sg-day:checked')).map(function (c) { return c.value; });
+      if (days.length && val('kb-sg-open') && val('kb-sg-close')) o.openingHoursSpecification = [{ '@type': 'OpeningHoursSpecification', dayOfWeek: days, opens: val('kb-sg-open'), closes: val('kb-sg-close') }];
+      if (val('kb-sg-price')) o.priceRange = val('kb-sg-price');
+      var same = list('kb-sg-same', /\n/);
+      if (same.length) o.sameAs = same;
+      $('kb-sg-out').value = '<script type="application/ld+json">\n' + JSON.stringify(o, null, 2) + '\n</' + 'script>';
+      var warn = [];
+      if (!o.name) warn.push(['bad', 'Add your business name.']);
+      if (!o.url) warn.push(['warn', 'Add your website address.']);
+      if (!o.telephone) warn.push(['warn', 'Add a phone number, written the same way as on your Google Business Profile.']);
+      if (!o.address) warn.push(['warn', 'Add at least your town and county.']);
+      if (hide) warn.push(['info', 'Your street address and postcode are left out, which suits businesses that travel to customers and hide their address on Google.']);
+      if (!warn.length) warn.push(['good', 'Looks complete. Test it before adding it to your site.']);
+      $('kb-sg-tips').innerHTML = warn.map(function (x) { return '<li class="' + x[0] + '">' + esc(x[1]) + '</li>'; }).join('');
+    };
+    sg.addEventListener('input', gen); sg.addEventListener('change', gen); gen();
+  }
 })();

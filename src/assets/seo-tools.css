@@ -46,3 +46,10 @@
 .kb-cards small{display:block;opacity:.85}
 .kb-rv-actions a.kb-btn{display:inline-block;background:#f7efe5;color:#2c2419;border:1px solid #d8c8b2;border-radius:8px;padding:.55rem 1rem;font-weight:700;text-decoration:none}
 @media (max-width:640px){.kb-split{grid-template-columns:1fr}}
+.kb-fr-row{display:grid;grid-template-columns:1fr 1fr 44px;gap:8px;margin-bottom:8px}
+.kb-fr-row button{padding:.4rem;font-size:1.2rem;line-height:1}
+.kb-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:6px 16px;margin:.8rem 0}
+.kb-preview{width:100%;height:260px;border:1px solid #e6d9c7;border-radius:10px;background:#fff}
+.kb-days{display:flex;flex-wrap:wrap;gap:6px 14px;margin:.4rem 0}
+.kb-tool table{width:100%;margin:.6rem 0}
+.kb-tool .kb-mono{font-family:Consolas,Menlo,monospace;font-size:.9rem}
