@@ -1363,3 +1363,16 @@ article details summary {
 nav input.nav-toggle {
   display: none !important;
 }
+
+.proof-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:1.6rem 0 1rem}
+.proof-strip div{background:#fff;border:1px solid #e6d9c7;border-radius:12px;padding:14px 16px;text-align:center}
+.proof-strip strong{display:block;font-size:1.35rem;line-height:1.2;color:var(--color-link)}
+.proof-strip span{display:block;font-size:.9rem;color:#5b5047}
+.proof-cta{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 2rem}
+.proof-cta .btn{display:inline-block;padding:.7rem 1.2rem;border-radius:8px;font-weight:700;text-decoration:none}
+.proof-cta .btn-primary{background:var(--color-link);color:#fff}
+.proof-cta .btn-secondary{background:#fff;color:var(--color-link);border:2px solid var(--color-link)}
+.faq details{background:#fff;border:1px solid #e6d9c7;border-radius:10px;padding:.8rem 1rem;margin:.6rem 0}
+.faq summary{font-weight:700;cursor:pointer}
+.faq details p{margin:.6rem 0 0}
+.as-seen{font-size:.9rem;text-align:center;margin-top:2rem}
