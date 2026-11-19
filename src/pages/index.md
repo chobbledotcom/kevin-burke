@@ -17,7 +17,7 @@ Most of my clients hire out bouncy castles, soft play, marquees, funfair rides, 
 I'm Kevin Burke, a Manchester-based SEO and content writer. Event hire SEO is what I spend my days on, and my prices are fair, whether you want a one-off job or ongoing monthly help. Monthly work is month to month, with no contract to tie you in.
 
 <div class="proof-strip">
-<div><strong>Since 2010</strong><span>doing SEO, 4 years at BCN</span></div>
+<div><strong>Since 2019</strong><span>my own business, after 4 years at BCN</span></div>
 <div><strong>100% recommend</strong><span>14 Facebook reviews</span></div>
 <div><strong>No contract</strong><span>month-to-month plans</span></div>
 <div><strong>8 free tools</strong><span>for hire businesses</span></div>
