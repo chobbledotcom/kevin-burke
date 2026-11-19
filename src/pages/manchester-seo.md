@@ -30,7 +30,7 @@ Prestwich is home, so it's where I know the local search patterns best. If you r
 
 Prestwich searches tend to be very local. People look for "near me" services, or add Prestwich, Whitefield or Bury to the search, so a Prestwich business needs a Google Business Profile that's set up properly, plenty of genuine reviews, and website pages that mention the streets and neighbourhoods it actually serves. That's the core of my Prestwich SEO work, and it costs far less than a city-centre agency.
 
-Being local also means I can pop round, or meet you for a coffee in the village, to go through your site and Google listing in person.
+For more on this, see my [Prestwich SEO](/prestwich-seo/) and [Bury SEO](/bury-seo/) pages.
 
 ### Covering the whole of Greater Manchester
 
@@ -38,7 +38,7 @@ Customers search by place, so the towns you cover matter as much as what you do.
 
 | Area | Places customers search for |
 |---|---|
-| North | Prestwich, Whitefield, Bury, Radcliffe, Rochdale, Heywood |
+| North | [Prestwich](/prestwich-seo/), Whitefield, [Bury](/bury-seo/), Radcliffe, Rochdale, Heywood |
 | West | Bolton, Wigan, Leigh, Salford, Eccles, Worsley |
 | South | Stockport, Sale, Altrincham, Didsbury, Chorlton, Stretford |
 | East | Oldham, Ashton-under-Lyne, Stalybridge, Hyde, Denton |
@@ -46,9 +46,9 @@ Customers search by place, so the towns you cover matter as much as what you do.
 
 I don't build pages for places you don't serve. Pages for areas you can't deliver to bring the wrong enquiries and can look like spam to Google.
 
-### Meeting up
+### Working with clients further afield
 
-If you're nearby and would rather talk in person, I'm happy to meet for a coffee in north Manchester. Otherwise email works just as well. Plenty of my clients are in Ireland, Scotland and the US, and we've never met.
+Plenty of my clients are in Ireland, Scotland and the US. Everything is done by email, so it works the same wherever you are.
 
 ### Frequently asked questions
 
@@ -69,14 +69,14 @@ It depends on how competitive your searches are and where your site starts from.
 <details>
 <summary>Are you a Prestwich SEO?</summary>
 
-Yes. I live and work in Prestwich, so I'm a local SEO for Prestwich, Whitefield and the rest of north Manchester as well as the wider region. Local businesses here are welcome to meet in person.
+Yes. I live and work in Prestwich, so I'm a local SEO for Prestwich, Whitefield and the rest of north Manchester as well as the wider region. See my [Prestwich SEO page](/prestwich-seo/) for more.
 
 </details>
 
 <details>
 <summary>Do I need to be based in Manchester to work with you?</summary>
 
-Not at all. I work with businesses across the UK, Ireland and the US. Being local just makes it easier if you'd like to meet.
+Not at all. I work with businesses across the UK, Ireland and the US, all by email.
 
 </details>
 
